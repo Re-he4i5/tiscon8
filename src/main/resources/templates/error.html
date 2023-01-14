@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>error</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" th:href="@{http://fonts.googleapis.com/css?family=Exo:900}"
+        href="http://fonts.googleapis.com/css?family=Exo:900"/>
+  <link rel="stylesheet" th:href="@{/css/main.css}" href="../static/css/main.css">
+</head>
+<body>
+
+<nav th:insert="header.html :: header"></nav>
+  <div class="ui main container">
+
+    <div class="d-flex align-items-center justify-content-center" style="height:300px;">
+        <h2>申し訳ございません。最大積載量を超過したため、<br>
+        お申し込みは直接お電話でご対応をさせていただきます。</h2>
+    </div>
+    <div class="d-flex align-items-center justify-content-center">
+        直接電話する（000-0000-000）
+    </div>
+    <div class="form-group">
+        <div class="text-center">
+          <a class="btn btn-back" href="/" role="button">TOPへ戻る</a>
+          <!-- <button type="submit" name="backToConfirm" class="btn-back">ご入力内容の確認へ戻る</button> -->
+        </div>
+    </div>
+
+    </div>
+  </div>
+<script src="../js/jquery-3.5.1.min.js" th:src="@{/js/jquery-3.5.1.min.js}"></script>
+<script src="../js/popper.min.js" th:src="@{/js/popper.min.js}"></script>
+<script src="../js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+</body>
+</html>
