@@ -8,6 +8,8 @@
   <link rel="stylesheet" th:href="@{http://fonts.googleapis.com/css?family=Exo:900}"
         href="http://fonts.googleapis.com/css?family=Exo:900"/>
   <link rel="stylesheet" th:href="@{/css/main.css}" href="../static/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
 </head>
 
 <body>
@@ -94,27 +96,27 @@
           <col span="2" style="background-color: #FFFFFF;">
           <tbody>
           <tr>
-            <th style="width: 40%">段ボールの個数</th>
+            <th style="width: 40%"><i class="fa-solid fa-box"></i>　段ボールの個数</th>
             <td><span th:text="*{box}"></span></td>
             <input type="hidden" name="box" id="box" th:value="*{box}"/>
           </tr>
           <tr>
-            <th>ベッドの個数</th>
+            <th><i class="fa-solid fa-bed"></i>　ベッドの個数</th>
             <td><span th:text="*{bed}"></span></td>
             <input type="hidden" name="bed" id="bed" th:value="*{bed}"/>
           </tr>
           <tr>
-            <th>自転車の個数</th>
+            <th><i class="fa-solid fa-bicycle"></i>　自転車の個数</th>
             <td><span th:text="*{bicycle}"></span></td>
             <input type="hidden" name="bicycle" id="bicycle" th:value="*{bicycle}"/>
           </tr>
           <tr>
-            <th>洗濯機の個数</th>
+            <th><i class="fa-solid fa-square"></i>　洗濯機の個数</th>
             <td><span th:text="*{washingMachine}"></span></td>
             <input type="hidden" name="washingMachine" id="washingMachine" th:value="*{washingMachine}"/>
           </tr>
           <tr>
-            <th>洗濯機の設置工事申し込み</th>
+            <th><i class="fa-solid fa-screwdriver-wrench"></i>　洗濯機の設置工事申し込み</th>
             <td><span th:text="*{washingMachineInstallation} ? 'あり' : 'なし'"></span></td>
             <input type="hidden" name="washingMachineInstallation" id="washingMachineInstallation" th:value="*{washingMachineInstallation}"/>
           </tr>
